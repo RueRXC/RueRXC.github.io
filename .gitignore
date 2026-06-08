@@ -1,0 +1,22 @@
+# Large source files (over GitHub's 100 MB per-file limit, or unused)
+/videos/aria_1.mov
+/videos/aria2.mp4
+
+# Local design backups
+*.bak.html
+*.bak.css
+
+# Personal source files not used by the live site
+/CV-4.docx
+/portfolio.pdf
+
+# Root-level duplicates of images that already live in /images
+/IMG_6028.jpg
+/wind.jpg
+/snow.jpg
+/cap.png
+/horizon.jpg
+
+# OS / editor noise
+Thumbs.db
+.DS_Store

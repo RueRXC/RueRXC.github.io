@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruxin Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-bracket">[</span>
+      <span class="brand-name">ruxin.chen</span>
+      <span class="brand-bracket">]</span>
+      <span class="brand-cursor">_</span>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="about" data-anchor="about-section" role="tab">
+        <span class="tab-index">01</span>
+        <span class="tab-label">About</span>
+      </button>
+      <button class="tab" data-tab="about" data-anchor="research-section" role="tab">
+        <span class="tab-index">02</span>
+        <span class="tab-label">Research</span>
+      </button>
+      <button class="tab" data-tab="about" data-anchor="beyond-section" role="tab">
+        <span class="tab-index">03</span>
+        <span class="tab-label">Beyond</span>
+      </button>
+      <div class="tab-indicator"></div>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <!-- ABOUT + RESEARCH (single scrollable panel) -->
+    <section class="panel active" id="about">
+      <div id="about-section">
+      <div class="panel-meta">// 01 — about</div>
+
+      <div class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent">Ruxin Chen</span>.
+          </h1>
+          <p class="hero-credentials">
+            M.S. Computer Science<br>
+            B.E. Mechanical and Electrical Engineering
+          </p>
+          <p class="hero-contact">
+            <a href="mailto:ruechen@nyu.edu">ruechen@nyu.edu</a>
+          </p>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="images/profile.png" alt="Ruxin Chen" />
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <div class="card card-feature">
+          <h3>About Me</h3>
+          <p>
+            I am a second-year M.S. student in Computer Science at the Courant Institute of Mathematical Sciences, New York University. I am currently a research intern at the AI4CE Lab at NYU under the supervision of Prof. Chen Feng. Previously, I worked as a student researcher at The University of Hong Kong, where I was advised by Prof. Victor C. S. Lee. My research interests include embodied AI, 3D generative models, and multimodal learning.
+          </p>
+        </div>
+      </div>
+      </div><!-- /#about-section -->
+
+      <div id="research-section">
+      <div class="panel-meta">// 02 — research projects</div>
+
+      <div class="project-list">
+        <details class="project" open>
+          <summary class="project-summary">
+            <div class="project-body">
+              <h3>Wanderland: Geometrically Grounded Simulation for Open-World Embodied AI</h3>
+              <div class="project-meta">
+                <span class="project-venue venue-highlight">CVPR 2026 Highlight</span>
+                <a class="project-link" href="https://ai4ce.github.io/wanderland/" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+                  Website <span class="link-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-chevron" aria-hidden="true">+</div>
+          </summary>
+          <div class="project-expanded">
+            <div class="project-videos">
+              <figure class="project-video">
+                <video src="videos/wanderland_multimodal.mp4" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>Multimodal Data Quality</figcaption>
+              </figure>
+              <figure class="project-video">
+                <video src="videos/wanderland_navtasks.mp4" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>Navigation Task Formats</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+        <details class="project" open>
+          <summary class="project-summary">
+            <div class="project-body">
+              <h3>Identity-Disentangled Multi-Person Multi-View Generation</h3>
+            </div>
+            <div class="project-chevron" aria-hidden="true">+</div>
+          </summary>
+          <div class="project-expanded">
+            <div class="project-videos">
+              <figure class="project-video">
+                <video src="videos/IDMM_0.mp4" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>Identity-Disentangled Generation Pipeline</figcaption>
+              </figure>
+              <figure class="project-video">
+                <video src="videos/IDMM_1.mp4?v=3" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>Multi-Person Multi-View Generation</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+        <details class="project" open>
+          <summary class="project-summary">
+            <div class="project-body">
+              <h3>ManipAria: A Multi-View Ego-Exo Dataset for Manipulation</h3>
+            </div>
+            <div class="project-chevron" aria-hidden="true">+</div>
+          </summary>
+          <div class="project-expanded">
+            <div class="project-videos videos-letterbox">
+              <figure class="project-video">
+                <video src="videos/aria_1_clip.mp4" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>Egocentric Capture</figcaption>
+              </figure>
+              <figure class="project-video">
+                <video src="videos/aria2_clip.mp4" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>Ego-Exo Multiview Capture</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+        <details class="project" open>
+          <summary class="project-summary">
+            <div class="project-body">
+              <h3>Mapping NYC: Analyzing Large-Scale SLAM and SfM Systems</h3>
+            </div>
+            <div class="project-chevron" aria-hidden="true">+</div>
+          </summary>
+          <div class="project-expanded">
+            <div class="project-videos">
+              <figure class="project-video">
+                <video src="videos/Slam1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>Method Comparison</figcaption>
+              </figure>
+              <figure class="project-video">
+                <video src="videos/slam2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+                <figcaption>VPR Failure Mode Analysis</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+      </div>
+      </div><!-- /#research-section -->
+
+      <div id="beyond-section">
+      <div class="panel-meta">// 03 — beyond</div>
+
+      <div class="beyond-feature">
+        <div class="beyond-photo">
+          <img src="images/wind.jpg" alt="Kitesurfing" />
+        </div>
+        <div class="beyond-text">
+          <p>Kitesurfing when there's wind, snowboarding when there's snow.</p>
+          <p>I love games, used to be a game tester at Lionbridge, and a Master TFT player.</p>
+        </div>
+      </div>
+      </div><!-- /#beyond-section -->
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>&copy; 2026 Ruxin Chen</span>
+    <span class="footer-dot">·</span>
+    <span class="mono">built with care</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
