@@ -350,6 +350,11 @@ body::before {
   color: var(--accent);
 }
 
+.contact-sep {
+  color: var(--text-faint);
+  margin: 0 8px;
+}
+
 .accent {
   background: linear-gradient(135deg, var(--accent) 0%, #a78bfa 100%);
   -webkit-background-clip: text;
