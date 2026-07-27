@@ -758,6 +758,14 @@ body::before {
   background: #0d1117;
 }
 
+.videos-16-9 .project-video video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #0d1117;
+}
+
 /* ---------- beyond (feature layout) ---------- */
 #beyond-section .section-title,
 #research-section .section-title {
